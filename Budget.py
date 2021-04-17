@@ -21,9 +21,6 @@ class Budget:
 
 
     def deposit(self,amount):
-        #self.deposit = deposit
-        #added_amt = self.deposit + self.lists
-        #self.lists.append([deposit])
         self.balance += amount
         print(f'You have deposited {amount} to your budget account'.format(amount))
         
@@ -33,15 +30,6 @@ class Budget:
           else:
             self.balance -= amount
             print( f'You have transfered {amount} naira'.format(amount))
-    
-        
-
-a = Budget('food')
-a.deposit(60000)
-a.withdraw(4000)
-a.check_balance()
-a.transfer(50)
-a.check_balance()
-a.check_category()
+   
 
 
